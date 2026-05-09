@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  height: 100vh;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  color: black;
+  font-size: 80px;
+  font-family: sans-serif;
+}
+
+.fa-snowflake {
+  position: absolute;
+  top: -20px;
+  color: rgb(255, 255, 255);
+
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
+.box {
+  background-color: #ffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px;
+}
+
+.wrap h1 {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-size: 7rem;
+  letter-spacing: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.countdown-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.card {
+  background: #222;
+  color: rgb(255, 255, 255);
+  padding: 50px 60px;
+  border-radius: 10px;
+  min-width: 90px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+}
